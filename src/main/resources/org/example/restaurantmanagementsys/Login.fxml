@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" stylesheets="@loginDesign.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.restaurantmanagementsys.RestaurantController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="right-form">
+               <children>
+                  <Button layoutX="234.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="53.0" styleClass="close" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="close" fill="WHITE" glyphName="CLOSE" />
+                     </graphic>
+                  </Button>
+                  <FontAwesomeIconView fill="WHITE" glyphName="BUILDING" layoutX="99.0" layoutY="165.0" size="10em" text="" />
+                  <Label alignment="CENTER" layoutX="110.0" layoutY="190.0" text="Cashier App" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="400.0" prefWidth="300.0" styleClass="left-form">
+               <children>
+                  <Label layoutX="109.0" layoutY="69.0" text="Sign In">
+                     <font>
+                        <Font name="Berlin Sans FB" size="30.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="#1f1c2c" glyphName="USER" layoutX="137.0" layoutY="63.0" selectionFill="#338e9e" size="3em" />
+                  <TextField fx:id="username" layoutX="41.0" layoutY="147.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="text-field" />
+                  <PasswordField fx:id="password" layoutX="42.0" layoutY="187.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="text-field" />
+                  <Button fx:id="loginBtn" layoutX="100.0" layoutY="240.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="100.0" styleClass="login-btn" text="Login" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
