@@ -18,7 +18,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
-public class RestaurantController implements Initializable {
+public class LoginController implements Initializable {
     @FXML
     private FontAwesomeIconView close;
 
